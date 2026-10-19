@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=desktop_cloud"
+    />
+    <script
+      src="https://kit.fontawesome.com/f386e35b64.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#" class="logo">Paloma E. Vilchis Rizo </a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="hero-content">
+          <img
+            src="Images/home.jpeg"
+            alt="Paloma Vilchis Rizo"
+            class="headshot"
+          />
+          <div class="hero-text">
+            <h1>About Me</h1>
+            <p>
+              I'm a full-stack web developer in Vancouver, BC, with a UX/UI
+              Design Associate Certificate and hands-on experience building
+              projects with JavaScript, Node.js, Express, MongoDB, and REST
+              APIs. Before development, I spent 6+ years as a technical
+              trainer at PayPal, turning complex product concepts into clear,
+              user-friendly documentation and today: I care as much about how
+              a feature reads and feels to the person using it as I do about
+              the code behind it. My knowledge management experience spans
+              building and maintaining documentation and training content in
+              Confluence, SharePoint, and Notion, and delivering it through
+              LMS platforms like Cornerstone OnDemand and WorkRamp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Video Editing</li>
+          <li>Git & GitHub</li>
+          <li>UX/UI Design</li>
+          <li>Figma</li>
+          <li>User Research & Usability Testing</li>
+          <li>Instructional Design</li>
+          <li>Learning Management Systems</li>
+          <li>Knowledge Management</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <article class="project-card">
+            <h3>Knowledge Management &mdash; Enablement</h3>
+            <p>
+              A user-centered redesign of PayPal's Hyperwallet training
+              program that cut delivery time by 40% and raised pass rates
+              from 60% to 80% across 200+ reps in four countries.
+            </p>
+            <a href="Projects.html" class="project-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>UX/UI Design in Figma</h3>
+            <p>
+              UX/UI Design Associate Certificate work from BCIT, including
+              the wireframes and design system behind Soapbox, a full-stack
+              social app.
+            </p>
+            <a href="Projects.html" class="project-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Web Development</h3>
+            <p>
+              Full-stack projects built with JavaScript, Node.js, Express,
+              and MongoDB, from this portfolio site's interactive contact
+              form to a CRUD to-do app backed by MongoDB Atlas.
+            </p>
+            <a href="Projects.html" class="project-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>UX Strategy &mdash; The Urban Camp</h3>
+            <p>
+              A research-driven redesign of a client site's navigation and
+              registration flow, from user flow mapping through wireframes
+              and Figma prototyping.
+            </p>
+            <a href="Projects.html" class="project-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>UX Usability Study &mdash; Zara</h3>
+            <p>
+              A mixed-methods usability study of Zara's e-commerce site
+              uncovering critical search and accessibility issues, translated
+              into concrete redesign proposals.
+            </p>
+            <a href="Projects.html" class="project-link">View project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-subtitle">
+          Have a question or want to work together? Send me a message.
+        </p>
+
+        <div id="form-success" class="form-success" style="display: none">
+          <span class="success-icon">✓</span>
+          <p>Message sent! I'll get back to you soon.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name"
+              >Name <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="Your full name"
+              maxlength="100"
+              autocomplete="name"
+            />
+            <span class="field-error" id="contact-name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email"
+              >Email <span class="required">*</span></label
+            >
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              placeholder="you@example.com"
+              maxlength="150"
+              autocomplete="email"
+            />
+            <span class="field-error" id="contact-email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message"
+              >Message <span class="required">*</span></label
+            >
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="Write your message here (at least 20 characters)..."
+              rows="5"
+              maxlength="500"
+            ></textarea>
+            <div class="textarea-meta">
+              <span class="field-error" id="contact-message-error"></span>
+              <span id="char-count" class="char-count">0 / 500</span>
+            </div>
+          </div>
+
+          <button type="submit" id="submit-btn" class="submit-btn">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="copyright">© 2026 Paloma Vilchis</p>
+        <span class="material-symbols-outlined footer-icon">
+          desktop_cloud
+        </span>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/paloma-vilchis/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

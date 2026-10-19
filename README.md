@@ -1,0 +1,1 @@
+Personal portfolio website built with HTML, CSS, and JavaScript. The website includes an about section, a skills list, project previews, a projects page, an embedded resume, and an interactive contact form.
